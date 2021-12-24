@@ -21,7 +21,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>flink.BruteForceAttack.class</mainClass>
+              <mainClass>flink.BruteForceAttack</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -33,18 +33,19 @@
     <groupId>org.apache.flink</groupId>
     <artifactId>flink-core</artifactId>
     <version>1.8.0</version>
-    <scope>provided</scope>
+    <scope>compile</scope>
 </dependency>
 <dependency>
     <groupId>org.apache.flink</groupId>
     <artifactId>flink-streaming-scala_2.11</artifactId>
     <version>1.8.0</version>
-    <scope>provided</scope>
+    <scope>compile</scope>
 </dependency>
 <dependency>
     <groupId>org.apache.flink</groupId>
     <artifactId>flink-clients_2.11</artifactId>
     <version>1.8.0</version>
+    <scope>compile</scope>
 </dependency>
 
 <dependency>
@@ -62,7 +63,7 @@
     <groupId>org.apache.flink</groupId>
     <artifactId>flink-cep_2.11</artifactId>
     <version>1.8.0</version>
-    <scope>provided</scope>
+    <scope>compile</scope>
 </dependency>
 <dependency>
     <groupId>org.apache.flink</groupId>
