@@ -12,6 +12,8 @@ import org.apache.flink.cep.pattern.Pattern;
 import entity.LoginEvent;
 import entity.LoginWarning;
 
+import java.util.List ;
+
 public class BruteForceAttack {
 
 	public static void main(String[] args) throws Exception {
