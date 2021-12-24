@@ -21,7 +21,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>flink.BruteForceAttack</mainClass>
+              <mainClass>flink.BruteForceAttack.class</mainClass>
             </manifest>
           </archive>
         </configuration>
