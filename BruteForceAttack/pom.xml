@@ -21,10 +21,10 @@
     <artifactId>flink-core</artifactId>
     <version>1.8.0</version>
     <scope>provided</scope>
- </dependency>
+</dependency>
 <dependency>
     <groupId>org.apache.flink</groupId>
-    <artifactId>flink-streaming-java_2.11</artifactId>
+    <artifactId>flink-streaming-scala_2.11</artifactId>
     <version>1.8.0</version>
     <scope>provided</scope>
 </dependency>
@@ -33,6 +33,7 @@
     <artifactId>flink-clients_2.11</artifactId>
     <version>1.8.0</version>
 </dependency>
+
 <dependency>
     <groupId>org.slf4j</groupId>
     <artifactId>slf4j-api</artifactId>
@@ -50,5 +51,12 @@
     <version>1.8.0</version>
     <scope>provided</scope>
 </dependency>
-</dependencies>
+<dependency>
+    <groupId>org.apache.flink</groupId>
+    <artifactId>flink-runtime-web_2.11</artifactId>
+    <version>1.8.0</version>
+    <scope>test</scope>
+</dependency>
+
+  </dependencies>
 </project>
