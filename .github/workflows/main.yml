@@ -31,16 +31,17 @@ jobs:
         with:
           java-version: 1.8
       - name: Build Maven
-        run: mvn -B package --file BruteForceAttack/pom.xml
-#              mkdir staging && cp target/*.jar staging
-#       - name: set up a cache for maven
-#         uses: actions/cache@v2
-#         with: 
-#           path: ~/.m2
-#           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-#           restore-keys: ${{ runner.os }}-m2
-#       - name: persist workflow data as artifacts
-#         uses: actions/upload-artifact@v1
-#         with:
-#           name: bruteforceattack-artifact
-#           path: staging
+        run: |
+             mvn -B package --file BruteForceAttack/pom.xml
+             mkdir staging && cp target/*.jar staging
+      - name: set up a cache for maven
+        uses: actions/cache@v2
+        with: 
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
+      - name: persist workflow data as artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: bruteforceattack-artifact
+          path: staging
